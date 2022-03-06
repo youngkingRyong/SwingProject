@@ -28,7 +28,7 @@ public class CalendarJava {
 		return month;
 	}
 	//생성자
-	public CalendarJava() {
+	public CalendarJava() { 
 		// TODO Auto-generated constructor stub
 	year = cal.get(Calendar.YEAR);
 	month = cal.get(Calendar.MONTH) + 1; //월에 +1찍어주는게 국룰이다.
@@ -86,3 +86,5 @@ public class CalendarJava {
 	
 	
 }
+
+
