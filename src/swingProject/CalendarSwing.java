@@ -177,7 +177,7 @@ public class CalendarSwing extends JFrame implements ActionListener{
 		this.add(yearLabel);
 		
 		
-		monthLabel = new JLabel(cal.getMonth()+".");
+		monthLabel = new JLabel(cal.getMonth()+". ");
 		monthLabel.setBounds(320, 200, 60, 35);
 		monthLabel.setFont(new Font(getName(), Font.BOLD, 30));
 		this.add(monthLabel);
