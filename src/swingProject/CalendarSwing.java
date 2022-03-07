@@ -26,8 +26,8 @@ public class CalendarSwing extends JFrame implements ActionListener{
 	JButton nextBtn, beforeBtn,finishBtn, mainBtn;
  	JPanel panel;
 	JLabel yearLabel,monthLabel,dDateLabel,aDateLabel;
-	ImageIcon underbar= new ImageIcon("/Users/igyeonglyong/Desktop/Swing project/underbar.png");
-	ImageIcon airplane= new ImageIcon("/Users/igyeonglyong/Desktop/Swing project/airplane.png");
+	ImageIcon underbar= new ImageIcon("./img/underbar.png");
+	ImageIcon airplane= new ImageIcon("./img/airplane.png");
 	
 	//
 	JButton[] dayButtons = new JButton[49];
@@ -36,6 +36,7 @@ public class CalendarSwing extends JFrame implements ActionListener{
 	int index = 1;
 
 
+	
 	/*
 	 * 이벤트
 	 * */
@@ -85,7 +86,7 @@ public class CalendarSwing extends JFrame implements ActionListener{
 		
 		cp = this.getContentPane();
 		this.setBounds(500,100,600,700);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		cp.setBackground(new Color(255,255,255));
 	}
 	
@@ -223,16 +224,13 @@ public class CalendarSwing extends JFrame implements ActionListener{
 	}
 	
 	
-	public CalendarSwing(String title) {
-		super(title);
+	public CalendarSwing() {
+		super("여행일 정하기");
 		essentialSwingFrame();
 		initDesign();
-		this.setVisible(true);
+		this.setVisible(false);
 	}
-	public static void main(String[] args) {
-		new CalendarSwing("");
-	
-	}
+
 
 
 	
